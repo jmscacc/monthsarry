@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div id="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <div class="container">
+        <div class="heading">
+            <div style="display: flex;">
+                <h1 id="months"></h1>
+                <h1 id="ordinal"></h1>
+            </div>
+        </div>
+
+        <div class="countdown-container">
+            <div class="days center">
+                <p class="big-text" id="days"></p>
+                <span id="day"></span>
+            </div>
+            <div class="hours center">
+                <p class="big-text" id="hours"></p>
+                <span id="hour"></span>
+            </div>
+            <div class="minutes center">
+                <p class="big-text" id="minutes"></p>
+                <span id="minute"></span>
+            </div>
+            <div class="seconds center">
+                <p class="big-text" id="seconds"></p>
+                <span id="second"></span>
+            </div>
+        </div>
+    </div> 
+    <div style="position: absolute;">
+        <figure id="wave">
+          <img id="you"></img>
+        </figure>
+    </div>
+    <div style="position: absolute" class="right">
+        <figure id="wave1">
+          <img id="me"></img>
+        </figure>
+    </div>
+    <div class="center">
+        <h1 id="happy"></h1>
+        <h1 id="monthsary"></h1>
+        <h1 id="yamko"></h1>
+    </div>
+    
+    <img id="cat" style="position: absolute;"></img>
+    <img id="heart" style="position: absolute;"></img>
+    <img id="heart2" style="position: absolute;"></img>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

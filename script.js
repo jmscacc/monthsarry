@@ -50,6 +50,9 @@ function nth(d) {
 const dayToDay = new Date().getDate()
 
 if(dayToDay === 10){
+    const firstDate = new Date(first);
+    const currentDate = new Date();
+    const currentMonthsarry = (currentDate.getTime() - firstDate.getTime()) / 2629746000;
     document.getElementById("wave").className += "wave";
     document.getElementById("wave1").className += "wave";
     document.getElementById("pyro").className += "pyro"
@@ -57,7 +60,7 @@ if(dayToDay === 10){
     document.getElementById("monthsary").className += "monthsary"
     document.getElementById("yamko").className += "yamko";
     document.getElementById("happy").innerHTML = "Happy"
-    document.getElementById("monthsary").innerHTML = "Monthsary"
+    document.getElementById("monthsary").innerHTML = (`${parseInt(currentMonthsarry)}th Monthsary`)
     document.getElementById("yamko").innerHTML = "Yam ko"
     let cat = document.getElementById("cat").src = "./images/cat1.gif";
     let heart = document.getElementById("heart").src = "./images/hearts.png";
